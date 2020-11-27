@@ -1,0 +1,60 @@
+body {
+    color: #DEE2E6;
+    font-family: 'Open Sans';
+}
+
+.wrapper {
+    background-color: #212529;
+    background-image: url("../../assets/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.sights {
+    position: relative;
+    z-index: 50;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-dark {
+    background-color: #343A40 !important;
+}
+
+.bg-main {
+    background-image: linear-gradient(45deg, #aa553b79, #5e2413, #e6633be3);
+}
+
+.bg-highline {
+    background-color: #DE6E4B;
+}
+
+.rounded-30 {
+    border-radius: 10px !important;
+}
+
+.text-highligne {
+    color: #DE6E4B;
+}
+
+.text-dark {
+    color: #343A40;
+}
+
+.settings:hover svg {
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
