@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
     <head>
-        <?php include 'views/head.php' ?>
+        <?php include './src/views/head.php' ?>
 
         <!-- Dashboard Styles -->
         <link rel="stylesheet" href="./src/css/prop.css">
@@ -29,7 +29,7 @@
     
             <div class="container py-3">
                 <div class="row">
-                    <?php require 'widget/daily/app.php' ?>
+                    <?php include './widget/daily/src/app.php' ?>
     
                     <div class="col-md-6 my-3">
                         <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-start">

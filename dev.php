@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
     <head>
-        <?php include 'views/head.php' ?>
+        <?php include './src/views/head.php' ?>
     </head>
     <body>
         <div class="wrapper">
