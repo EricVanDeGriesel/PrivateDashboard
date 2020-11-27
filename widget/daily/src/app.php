@@ -23,7 +23,7 @@
 
         <div class="col-7 col-md-12 col-lg-4 my-3">
             <div class="h-100 p-4 bg-dark rounded-30 d-flex justify-content-center align-items-center">
-                <div class="text-left"></div>
+                <div class="text-left">
                     <p class="mb-0">Hier ist noch Platz für mehr...</p>
                 </div>
             </div>
