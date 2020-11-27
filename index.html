@@ -9,6 +9,13 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
         <link rel="stylesheet" href="assets/css/app.css">
         <link rel="stylesheet" href="assets/css/prop.css">
+
+        <!-- Widget Daily -->
+        <link rel="stylesheet" href="./widget/daily/app.css">
+
+        <!-- Widget Weather -->
+
+        <!-- Widget Spotify -->
     </head>
     <body>
         <div class="wrapper">
@@ -26,32 +33,7 @@
     
             <div class="container py-3">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4 my-3">
-                                <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-center">
-                                    <p class="display-3 mb-0">17:10</p>
-                                </div>
-                            </div>
-    
-                            <div class="col-5 col-md-6 col-lg-2 my-3">
-                                <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-center">
-                                    <div class="text-left">
-                                        <p class="text-highligne text-uppercase mb-0">Samstag</p>
-                                        <p class="display-4 mb-0">7</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 col-lg-6 my-3">
-                                <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-start">
-                                    <div class="text-left">
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi alias at deleniti porro blanditiis corrupti quisquam.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php require 'widget/daily/app.html'; ?>
     
                     <div class="col-md-6 my-3">
                         <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-start">
@@ -110,5 +92,10 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="assets/js/prop.js"></script>
+
+        <!-- Widget Daily -->
+        <script src="./widget/daily/app.js"></script>
+
+        <!-- Widget Weather -->
     </body>
 </html>
