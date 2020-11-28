@@ -50,6 +50,10 @@ h1 {
     color: #343A40;
 }
 
+.text-light {
+    color: #DEE2E6;
+}
+
 .settings:hover svg {
     animation: rotate 3s infinite linear;
 }
