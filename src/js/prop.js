@@ -48,7 +48,7 @@ var prop = {
             return Math.floor(Math.random() * (max - min)) + min;
         }
 
-        setInterval(render, Math.random() * 600 + 200);
+        window.propInterval = setInterval(render, Math.random() * 600 + 200);
     },
 
     /**
@@ -110,3 +110,38 @@ var prop = {
     }
 }
 
+
+/**
+ * Changes the active script if prop rain or mouseover is selected
+ */
+const radioRain = document.getElementById('propRadioRain');
+const radioMousemove = document.getElementById('propRadioMousemove');
+const propType = {
+    0: 'rain',
+    1: 'mousemove',
+};
+
+radioRain.addEventListener('change', () => {
+    localStorage.setItem('prop', propType[0]);
+    document.getElementById('propContainer').remove();
+    prop.rain();
+});
+
+radioMousemove.addEventListener('change', () => {
+    localStorage.setItem('prop', propType[1]);
+    clearInterval(window.propInterval);
+    document.getElementById('propContainer').remove();
+    prop.mousemove();
+});
+
+if (localStorage.getItem('prop') == propType[0]) {
+    radioRain.checked = true;
+    prop.rain();
+} else if (localStorage.getItem('prop') == propType[1]) {
+    radioMousemove.checked = true;
+    prop.mousemove();
+} else {
+    localStorage.setItem('prop', propType[0]);
+    radioRain.checked = true;
+    prop.rain();
+}

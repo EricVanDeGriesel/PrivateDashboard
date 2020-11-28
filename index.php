@@ -77,10 +77,6 @@
 
         <!-- Dashboard Scripts -->
         <script src="./src/js/prop.js"></script>
-        <script>
-            //prop.rain();
-            prop.mousemove();
-        </script>
 
         <!-- Widget Daily -->
         <script src="./widget/daily/src/js/app.js"></script>

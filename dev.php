@@ -66,9 +66,5 @@
         <?php include './src/views/scripts.php' ?>
 
         <script src="./src/js/prop.js"></script>
-        <script>
-            //prop.rain();
-            prop.mousemove();
-        </script>
     </body>
 </html>
