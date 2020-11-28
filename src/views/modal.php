@@ -8,7 +8,18 @@
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <div>
+                    <label class="w-100" for="propRadio">Was sollen die Props machen?</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="propRadioRain" name="propRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="propRadioRain">Regnen</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="propRadioMousemove" name="propRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="propRadioMousemove">Sich bewegen</label>
+                    </div>
+                </div>
+                
             </div>
             <div class="modal-footer border-0">
                 <small>Änderungen werden automatisch übernommen</small>
