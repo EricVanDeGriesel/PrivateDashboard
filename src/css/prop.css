@@ -1,9 +1,17 @@
-.prop {
+.prop-rain {
     position: fixed;
     top: -5vh;
     font-size: 2rem;
     transform: translateY(0);
     animation: propRain 15s linear;
+    left: 50%;
+    z-index: 45;
+}
+
+.prop-mousemove {
+    position: fixed;
+    font-size: 2rem;
+    top: 50%;
     left: 50%;
     z-index: 45;
 }
