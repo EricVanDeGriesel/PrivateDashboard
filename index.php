@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./src/css/prop.css">
 
         <!-- Widget Daily -->
-        <link rel="stylesheet" href="./widget/daily/src/app.css">
+        <link rel="stylesheet" href="./widget/daily/src/css/app.css">
 
         <!-- Widget Weather -->
 
@@ -91,7 +91,7 @@
         <script src="./src/js/prop.js"></script>
 
         <!-- Widget Daily -->
-        <script src="./widget/daily/src/app.js"></script>
+        <script src="./widget/daily/src/js/app.js"></script>
 
         <!-- Widget Weather -->
     </body>

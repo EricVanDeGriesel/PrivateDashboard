@@ -2,6 +2,8 @@
 <html lang="de">
     <head>
         <?php include './src/views/head.php' ?>
+
+        <link rel="stylesheet" href="./src/css/prop.css">
     </head>
     <body>
         <div class="wrapper">
@@ -74,5 +76,7 @@
         </div>
 
         <?php include './src/views/scripts.php' ?>
+
+        <script src="./src/js/prop.js"></script>
     </body>
 </html>
