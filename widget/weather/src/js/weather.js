@@ -30,7 +30,7 @@ function getResults(query) {
 
 function displayWeatherWidgetFull(weather, weatherCurrent) {
   //displayResults(weather);
-  dailyForecast(weather);
+ dailyForecast(weather);
   //hourlyForecast(weather);
   hourlyForecastChart(weather);
 
@@ -43,7 +43,7 @@ function displayResults(weatherCurrent) {
   console.log(weatherCurrent);
 
   let icon = document.querySelector('.icon');
-  icon.innerHTML = "<img width='90px' class='centerContent' src=./widget/weather/src/weatherIcons/" + weatherCurrent.weather[0].icon + ".svg>";
+  icon.innerHTML = "<img width='120px' class='centerContent' src=./widget/weather/src/weatherIcons/" + weatherCurrent.weather[0].icon + ".svg>";
 
   let temp = document.querySelector(' .temp');
   temp.innerText = `${Math.round(weatherCurrent.main.temp)}°`;
@@ -52,16 +52,16 @@ function displayResults(weatherCurrent) {
   weather_el.innerText = weatherCurrent.weather[0].description;
 
   let feels = document.querySelector('.feels');
-  feels.innerText = `${Math.round(weatherCurrent.main.feels_like)}°`;
+  feels.innerHTML = "<img width='20px' src=./widget/weather/src/weatherIcons/feels.svg> " + `${Math.round(weatherCurrent.main.feels_like)}°`;
 
   let hilow = document.querySelector('.hi-low');
-  hilow.innerText = `${Math.round(weatherCurrent.main.temp_max)}° / ${Math.round(weatherCurrent.main.temp_min)}°`;
+  hilow.innerHTML = "<img width='20px' src=./widget/weather/src/weatherIcons/hilow.svg> " +  `${Math.round(weatherCurrent.main.temp_max)}° / ${Math.round(weatherCurrent.main.temp_min)}°`;
 
   let hum = document.querySelector('.humidity');
-  hum.innerText = `${weatherCurrent.main.humidity}%`;
+  hum.innerHTML = "<img width='20px' src=./widget/weather/src/weatherIcons/hum.svg> " +  `${weatherCurrent.main.humidity}%`;
 
   let windSpeed = document.querySelector('.windSpeed');
-  windSpeed.innerText = `${weatherCurrent.wind.speed}m/s`;
+  windSpeed.innerHTML = "<img width='20px' src=./widget/weather/src/weatherIcons/wind.svg> " + `${weatherCurrent.wind.speed}m/s`;
 
 }
 
@@ -125,7 +125,7 @@ function dailyForecast(weather) {
     headerDay.innerText = unixToDay(weather.daily[i].dt);
 
     var iconElement = document.getElementById("iconSlot" + (i + 1));
-    iconElement.innerHTML = "<img width='90px' src=./widget/weather/src/weatherIcons/" + weather.daily[i].weather[0].icon + ".svg>";
+    iconElement.innerHTML = "<img width='50px' src=./widget/weather/src/weatherIcons/" + weather.daily[i].weather[0].icon + ".svg>";
 
     var tempElement = document.getElementById("bodySlot" + (i + 1));
     tempElement.innerText = `${Math.round(weather.daily[i].temp.day)}° / ${Math.round(weather.daily[i].temp.night)}°`;
@@ -137,7 +137,7 @@ function dailyForecast(weather) {
     hilow.innerHTML = "<img width='25px' src=./widget/weather/src/weatherIcons/hilow.svg>" + `${Math.round(weather.daily[i].temp.max)}° / ${Math.round(weather.daily[i].temp.min)}°`;
 
     var hum = document.getElementById("hum" + (i + 1));
-    hum.innerHTML = "<img width='20px' src=./widget/weather/src/weatherIcons/hum.png> " + `${weather.daily[i].humidity}%`;
+    hum.innerHTML = "<img width='25px' src=./widget/weather/src/weatherIcons/hum.svg> " + `${weather.daily[i].humidity}%`;
 
   }
 }
@@ -174,6 +174,7 @@ function hourlyForecastChart(weather) {
 
   new Chart(document.getElementById("hourlyChart"), {
     type: 'line',
+    responsive: true,
     data: {
       labels: time,
       datasets: [{

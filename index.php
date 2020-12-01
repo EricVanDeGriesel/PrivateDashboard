@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="./widget/weather/src/css/main.css">
         <!-- Widget Spotify -->
     </head>
-    <body>
+    <body onload="getResults()">
         <div class="wrapper">
             <header>
                 <div class="container pt-3">
@@ -32,7 +32,7 @@
             <div class="container py-3">
                 <div class="row">
                     <?php include './widget/daily/src/app.php' ?>
-                    <?php include 'widget/weather/src/weather.html' ?>
+                    <?php include './widget/weather/src/weather.php' ?>
     
                     <div class="col-md-6 my-3">
                         <div class="sights h-100 p-4 bg-dark rounded-30 shadow d-flex justify-content-center align-items-start">
@@ -76,7 +76,7 @@
             <?php include './src/views/footer.php' ?>
         </div>
 
-        <?php include './src/views/scripts.php' ?>
+       
 
         <!-- Dashboard Scripts -->
         <script src="./src/js/prop.js"></script>

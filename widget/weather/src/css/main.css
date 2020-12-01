@@ -11,7 +11,7 @@
 
 .borderWeatherFull {
     border-style: solid;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .innerBorderWeather {
@@ -19,7 +19,7 @@
 }
 
 .weatherFont {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -50,6 +50,109 @@
     user-select: none;
 }
 
+.extra-font {
+    font-size: 20px;
+}
+
+.noTdPad {
+    padding: 0 15px 0 0!important;
+}
+
+.sizeDown {
+    padding-top: 0px!important;
+    padding-right: 0.75rem;
+    padding-bottom: 0px!important;
+    padding-left: 0.75rem;
+    
+}
+noPad {
+    margin-block-end: 0px!important;
+}
+#test{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Media queries ------------------------------------------------------------------------------------------- */
+
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (max-width: 576px) { 
+    #hChart {
+        border-radius: 10px;
+        display: none;
+        
+    }
+    #infoTable{
+        border-radius: 10px;
+        
+    }
+    #test{
+        display: none;
+    }
+ }
+
+ @media (min-width: 768px ) and (max-width: 990px) {
+    .extra-font{
+        font-size: 15px!important;
+    }
+    .sizeChart {
+        margin-top: 35px;
+    }
+    
+ }
+/* Medium devices (tablets, 768px and up) md */
+@media (max-width: 768px) { 
+    #hChart {
+        border-radius: 10px;
+        display: none;
+
+    }
+   
+    #infoTable{
+        border-radius: 10px;
+        
+    }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #infoTable{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 180px;
+    }
+    
+    #hChart {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 180px;
+    }
+    
+ }
+ 
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    #infoTable{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #hChart {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #test {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+ }
+
+
+
 /* Color Theme ------------------------------------------------------------------------------------------- */
 
 .bg-gradient {
@@ -64,12 +167,19 @@
 
 .text-theme-white {
     color: var(--white);
+    user-select: none;
 }
 
 .bg-theme-grey {
     background-color: var(--grey);
+    
 }
 
 .bg-theme-dark {
     background-color: var(--dark);
+    
+}
+
+.text-theme-higlight {
+    color: var(--secondary);
 }
