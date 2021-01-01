@@ -131,7 +131,7 @@ function dailyForecast(weather) {
     tempElement.innerText = `${Math.round(weather.daily[i].temp.day)}° / ${Math.round(weather.daily[i].temp.night)}°`;
 
     var feels = document.getElementById("feels" + (i + 1));
-    feels.innerHTML = "<img width='25px' src=./widget/weather/src/weatherIcons/feels.svg>" + `${Math.round(weather.daily[i].feels_like.day)}°`;
+    feels.innerHTML = "<img width='25px' src=./widget/weather/src/weatherIcons/feels.svg> <br>" + `${Math.round(weather.daily[i].feels_like.day)}°`;
 
     var hilow = document.getElementById("hilow" + (i + 1));
     hilow.innerHTML = "<img width='25px' src=./widget/weather/src/weatherIcons/hilow.svg>" + `${Math.round(weather.daily[i].temp.max)}° / ${Math.round(weather.daily[i].temp.min)}°`;
